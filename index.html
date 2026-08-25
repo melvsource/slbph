@@ -388,6 +388,9 @@
   /* ---------- application steps ---------- */
   .step-list{ margin-top: 30px; display: flex; flex-direction: column; gap: 16px; }
   .step-item{ display: flex; gap: 16px; align-items: flex-start; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 16px 18px; }
+  a.step-item{ text-decoration: none; color: inherit; transition: border-color .2s ease, box-shadow .2s ease; }
+  a.step-item:hover{ border-color: var(--green); box-shadow: 0 4px 14px rgba(91,174,39,.14); }
+  .step-link-hint{ flex: none; align-self: center; display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-head); font-size: 12px; font-weight: 700; color: var(--green-dark); white-space: nowrap; }
   .step-num{ flex: none; font-family: var(--font-head); font-size: 19px; font-weight: 800; color: var(--green-dark); min-width: 28px; }
   .step-body b{ display: block; font-family: var(--font-head); font-size: 14.5px; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
   .step-body span{ font-size: 13.5px; color: var(--muted); }
@@ -441,7 +444,7 @@
   Every "Not ready" / "Ask us first" action routes here.
 -->
 <script>
-  window.FACEBOOK_URL = "REPLACE_WITH_SLB_PH_FACEBOOK_URL";
+  window.FACEBOOK_URL = "https://facebook.com/slandbph";
   window.REFERRAL_NO = "610000664267";
 </script>
 
@@ -692,7 +695,7 @@
       <div class="pc-eyebrow reveal"><span class="pc-dot">PC</span> Ready to explore?</div>
       <h2 class="reveal">Here's how to start.</h2>
       <div class="step-list">
-        <div class="step-item reveal"><span class="step-num">01</span><div class="step-body"><b>Download the Personal Collection app</b><span>Start through the official application process.</span></div></div>
+        <a href="https://pcapp.pcdsi.ph" target="_blank" rel="noopener" class="step-item reveal"><span class="step-num">01</span><div class="step-body"><b>Download the Personal Collection app</b><span>Start through the official application process.</span></div><span class="step-link-hint">Open app ↗</span></a>
         <div class="step-item reveal"><span class="step-num">02</span><div class="step-body"><b>Complete your information</b><span>Provide the required information and documents.</span></div></div>
         <div class="step-item reveal"><span class="step-num">03</span><div class="step-body"><b>Submit for assessment</b><span>Your application is assessed per applicable requirements.</span></div></div>
         <div class="step-item reveal"><span class="step-num">04</span><div class="step-body"><b>Wait for approval</b><span>Personal Collection determines whether you qualify.</span></div></div>
